@@ -1,0 +1,137 @@
+﻿<Page
+    x:Class="Caculator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Caculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:ConnectionId='2' x:Name="MainGrid" Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="1.0*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1.0*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1.0*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1.0*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1.0*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="18"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="1.0*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="1.0*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="1.0*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="1.0*"/>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="1.0*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <MenuBar x:ConnectionId='3' Name="MainMenu" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="9" Background="Pink" >
+            
+        </MenuBar>
+        <TextBox x:ConnectionId='4' Name="Entry" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="9" Background="blue"
+                 TextAlignment="Right" FontSize="18" BorderThickness="2" BorderBrush="#CCCCCC">
+           
+        </TextBox>
+
+        <Button x:ConnectionId='5' Name="MemoryClear" Grid.Row="4"  Grid.Column="1"
+                Content="MC" FontSize="50"/>
+        <Button x:ConnectionId='6' Name="MemoryRecall" Grid.Row="4"  Grid.Column="3"
+                   Content="MR" FontSize="50"/>
+        <Button x:ConnectionId='7' Name="MemorySave"   Grid.Row="4"  Grid.Column="5"
+                    Content="MS" FontSize="50"/>
+        <Button x:ConnectionId='8' Name="MemoryAdd"    Grid.Row="4"  Grid.Column="7"
+                 Content="M+"  FontSize="50"/>
+        <Button x:ConnectionId='9' Name="MemorySubstract" Grid.Row="4"  Grid.Column="9"
+                Content="M-" FontSize="50" />
+        <Button x:ConnectionId='10' Name="EditDeleteLast"            Grid.Row="6"  Grid.Column="1"
+                Content="←" FontSize="50" />
+        <Button x:ConnectionId='11' Name="EditClearEntry"            Grid.Row="6"  Grid.Column="3"
+               Content="CE" FontSize="50"/>
+        <Button x:ConnectionId='12' Name="EditClearAll"              Grid.Row="6"  Grid.Column="5"
+                  Content="C" FontSize="50"/>
+        <Button x:ConnectionId='13' Name="CalculateDivide"           Grid.Row="6"  Grid.Column="7"
+               Content="/" FontSize="50"/>
+        <Button x:ConnectionId='14' Name="CalculateSqrt"             Grid.Row="6"  Grid.Column="9"
+                  Content="x ¹/²" FontSize="50"/>
+
+        <Button x:ConnectionId='15' Name="NumberSeven"               Grid.Row="8"  Grid.Column="1"
+                >
+            <TextBlock Text="7"  FontWeight="Bold" FontSize="50"/>
+        </Button>
+        <Button x:ConnectionId='16' Name="NumberEight"               Grid.Row="8"  Grid.Column="3"
+                >
+            <TextBlock Text="8"  FontWeight="Bold" FontSize="50" />
+        </Button>
+        <Button x:ConnectionId='17' Name="NumberNine"                Grid.Row="8"  Grid.Column="5"
+                >
+            <TextBlock Text="9"  FontWeight="Bold" FontSize="50" />
+        </Button>
+        <Button x:ConnectionId='18' Name="CalculateMultiply"         Grid.Row="8"  Grid.Column="7"
+             Content="*" FontSize="50"/>
+        <Button x:ConnectionId='19' Name="CalculateSquare"           Grid.Row="8"  Grid.Column="9"
+               Content="x ²" FontSize="50"/>
+
+        <Button x:ConnectionId='20' Name="NumberFour"                 Grid.Row="10" Grid.Column="1"
+                  >
+            <TextBlock Text="4"  FontWeight="Bold" FontSize="50"/>
+        </Button>
+        <Button x:ConnectionId='21' Name="NumberFive"                 Grid.Row="10" Grid.Column="3"
+                   >
+            <TextBlock Text="5"  FontWeight="Bold" FontSize="50"/>
+        </Button>
+        <Button x:ConnectionId='22' Name="NumberSix"                  Grid.Row="10" Grid.Column="5"
+                  >
+            <TextBlock Text="6"  FontWeight="Bold" FontSize="50"/>
+        </Button>
+        <Button x:ConnectionId='23' Name="CalculateSubtract"          Grid.Row="10" Grid.Column="7"
+               Content="-" FontSize="50"/>
+        <Button x:ConnectionId='24' Name="CalculateReciprocal"        Grid.Row="10" Grid.Column="9"
+            Content="1/x" FontSize="50"/>
+
+        <Button x:ConnectionId='25' Name="NumberOne"                  Grid.Row="12" Grid.Column="1"
+                    >
+            <TextBlock Text="1"  FontWeight="Bold" FontSize="50"/>
+        </Button>
+        <Button x:ConnectionId='26' Name="NumberTwo"                  Grid.Row="12" Grid.Column="3"
+                   >
+            <TextBlock Text="2"  FontWeight="Bold" FontSize="50"/>
+        </Button>
+        <Button x:ConnectionId='27' Name="NumberThree"                Grid.Row="12" Grid.Column="5"
+                 >
+            <TextBlock Text="3"  FontWeight="Bold" FontSize="50"/>
+        </Button>
+        <Button x:ConnectionId='28' Name="CalculateAdd"               Grid.Row="12" Grid.Column="7"
+                  Content="+" FontSize="50"/>
+        <Button x:ConnectionId='29' Name="CalculateResult"            Grid.Row="12" Grid.Column="9"
+                Content="=" Grid.RowSpan="3" FontSize="50"/>
+
+        <Button x:ConnectionId='30' Name="NumberZero"                 Grid.Row="14" Grid.Column="1" Grid.ColumnSpan="3"
+                   >
+            <TextBlock Text="0"  FontWeight="Bold" FontSize="50"/>
+        </Button>
+        <Button x:ConnectionId='31' Name="NumberDecimalDot"           Grid.Row="14" Grid.Column="5"
+              >
+            <TextBlock Text="."  FontWeight="Bold" FontSize="50"/>
+        </Button>
+        <Button x:ConnectionId='32' Name="CalculateNegate"            Grid.Row="14" Grid.Column="7"
+              Content="+/-" FontSize="50"/>
+
+    </Grid>
+    
+</Page>
+
